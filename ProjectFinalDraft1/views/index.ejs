@@ -1,0 +1,42 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+    <body>
+        <%- include("./partials/nav.ejs") %>
+
+            <div class="blogs content">
+                <h2>All items</h2>
+
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="prods">
+                    <% if (blogs.length > 0) { %>
+                        <% blogs.forEach(blog => { %>
+
+                            <a class="single" href="/blogs/<%= blog._id %>">
+                                <!-- <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
+                                <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                                    <div>
+                                        <img src="<%= blog.img %>" alt="image" style="max-width: 500px; border-radius: 15px;" />
+                                    </div>
+                                    <div class="my-3 py-3">
+                                        <h2 class="display-5">
+                                            <%= blog.name %>
+                                        </h2>
+                                        <p class="lead">
+                                            <%= blog.type %>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <% }) %>
+                                <% } else { %>
+                                    <p>This list is empty. Click "ADD" to add an item.</p>
+                                    <% } %>
+                </div>
+
+            </div>
+
+            <%- include("./partials/footer.ejs") %>
+    </body>
+
+</html>

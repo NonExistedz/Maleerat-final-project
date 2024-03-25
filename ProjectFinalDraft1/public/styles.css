@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&display=swap');
+body {
+    padding: 0 60px;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffffd5;
+}
+
+* {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+a,
+ul {
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    align-items: center;
+    /* margin-bottom: 60px; */
+    padding-bottom: 40px;
+    border-bottom: 2px dashed #bdbdbd;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav li {
+    /* margin-left: 175px; */
+    margin-top: 20px;
+    list-style-type: none;
+    background-color: rgba(218, 218, 218, 0.8);
+    padding: 10px;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    width: 250px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+}
+
+nav li:hover {
+    transform: scale(1.05);
+    text-align: center;
+}
+
+nav h1 {
+    font-size: 3.5em;
+    color: #000000;
+}
+
+nav a {
+    color: #ffffff;
+    text-align: center;
+}
+
+footer {
+    color: #c0c0c0;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+}
+
+.create-blog {
+    padding-top: 40px;
+}
+
+.create-blog form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.create-blog input,
+.create-blog textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.create-blog button {
+    margin-top: 20px;
+    background: rgba(218, 218, 218, 0.8);
+    color: white;
+    padding: 10px 30px;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 250px;
+    transition: all 0.2s ease;
+}
+
+.create-blog button:hover {
+    transform: scale(1.05);
+}
+
+#details-img {
+    display: flex;
+    justify-content: center;
+}
+
+#details-img>img {
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+#details-name {
+    font-size: xx-large;
+    margin: 30px 0px;
+}
+
+#product-details {
+    padding: 30px 0px;
+    font-size: x-large;
+}
+
+#trash-btn {
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button a {
+    margin: 0;
+    width: 100px;
+    padding: 10px;
+    background-color: rgba(218, 218, 218, 0.8);
+    border-radius: 15px;
+}
+
+.button a:hover {
+    transform: scale(1.05);
+}
+
+.blogs>h2 {
+    font-size: xx-large;
+    margin: 30px 0;
+}
+
+#prods {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.about li {
+    list-style: none;
+}
+
+.about>h2 {
+    margin-top: 30px;
+}
+
+#images {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#images img {
+    max-width: 15vw;
+    border-radius: 15px;
+}
+
+.contact-us {
+    width: 100%;
+}
+
+.cta-button {
+    margin: 0;
+    margin-top: 15px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgba(218, 218, 218, 0.8);
+    color: white;
+    font-size: xx-large;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+.about-image {
+    border-radius: 15px;
+}
+
+
+/* .single {
+    flex: 0 0 50%;
+} */
