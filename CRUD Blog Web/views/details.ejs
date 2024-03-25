@@ -6,23 +6,41 @@
 
             <div class="details content">
                 <h2>
-                    <%= blog.title %>
+                    <%= blog.name %>
                 </h2>
-                <div class="content">
-                    <p>
-                        <%= blog.body %>
-                    </p>
-                </div>
-                <div class="button">
-                    <a class="edit" href="/blogs/update/<%= blog._id %>">
-                        <!-- <img src="/trashcan.svg" alt="edit icon"> -->
-                        Edit
-                    </a>
-                    <a class="delete" data-doc="<%= blog._id %>">
-                        <img src="/trashcan.svg" alt="delete icon">
-                    </a>
-                </div>
 
+            </div>
+            <div>
+                <img src="<%= blog.img %>" alt="image" />
+
+
+            </div>
+
+            </div>
+            <div class="content">
+                <p>
+                    <%= blog.type %>
+                </p>
+            </div>
+            <div class="content">
+                <p>
+                    <%= blog.description %>
+                </p>
+            </div>
+            <div class="content">
+                <p>
+                    <%= blog.stock %>
+                </p>
+            </div>
+            <div class="button">
+                <a class="edit" href="/blogs/update/<%= blog._id %>">
+                    <!-- <img src="/trashcan.svg" alt="edit icon"> -->
+                    Edit
+                </a>
+                <a class="delete" data-doc="<%= blog._id %>">
+                    <img src="/trashcan.svg" alt="delete icon">
+                </a>
+            </div>
 
             </div>
 

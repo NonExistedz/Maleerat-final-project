@@ -79,6 +79,11 @@ const blog_delete = (req, res) => {
         });
 }
 
+const blog_about = (req, res) => {
+    res.render('about', { title: 'Blog About' });
+}
+
+
 module.exports = {
     blog_index,
     blog_details,
@@ -86,5 +91,6 @@ module.exports = {
     blog_create_post,
     blog_update_get,
     blog_update_post,
-    blog_delete
+    blog_delete,
+    blog_about
 }

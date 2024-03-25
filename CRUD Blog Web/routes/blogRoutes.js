@@ -10,5 +10,6 @@ router.get('/:id', blogController.blog_details);
 router.get('/update/:id', blogController.blog_update_get);
 router.post('/update/:id', blogController.blog_update_post);
 router.delete('/:id', blogController.blog_delete);
+router.get('/about', blogController.blog_about);
 
 module.exports = router;

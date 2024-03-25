@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-
-/* Font with a feminine touch */
-
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&display=swap');
 body {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-    font-family: 'Dancing Script', cursive;
-    /* Cursive font for a girlish feel */
-    background-color: #f9f0f0;
-    /* Soft pink background */
-    color: #ff85a2;
-    /* Pink text color */
+    padding: 0 60px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffffd5;
 }
 
 p,
@@ -20,167 +13,64 @@ h2,
 h3,
 a,
 ul {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     text-decoration: none;
     color: #333;
-    /* Dark gray text color */
+    text-align: center;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    padding-bottom: 10px;
-    border-bottom: 2px dashed #ffd3e4;
-    /* Dashed pink border */
+    text-align: center;
+    align-items: center;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 2px dashed #bdbdbd;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* Center items vertically */
 }
 
 nav li {
+    margin-left: 175px;
+    margin-top: 20px;
     list-style-type: none;
-    margin-left: 20px;
-    background-color: #ffccd2;
-    /* Light pink background */
-    padding: 15px;
-    border-radius: 50px;
-    /* Rounded corners */
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    background-color: rgba(218, 218, 218, 0.8);
+    padding: 10px;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    width: 190px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
 }
 
 nav li:hover {
     transform: scale(1.05);
-    /* Scale effect on hover */
+    text-align: center;
 }
 
 nav h1 {
     font-size: 3.5em;
-    /* Larger title font size */
-    color: #ff4d6d;
-    /* Bright pink title color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000000;
 }
 
 nav a {
     color: #ffffff;
-    font-weight: bold;
+    text-align: center;
 }
-
-nav a:hover {
-    color: #ff4d6d;
-    /* Hover color change to bright pink */
-}
-
-
-/* Simplified styles for the copyright bar */
 
 footer {
-    color: #ff85a2;
-    /* Pink text color */
+    color: #c0c0c0;
     text-align: center;
     margin: 60px auto;
     padding: 15px;
-    /* Light pink background */
 }
-
-h2 {
-    margin-bottom: 40px;
-    /* Increased spacing */
-}
-
-h3 {
-    text-transform: capitalize;
-    margin-bottom: 6px;
-    /* Smaller margin */
-}
-
-content {
-    margin-left: 15px;
-    /* Slightly adjusted margin */
-}
-
-
-/* Additional colorful and soft styles can be added as needed */
-
-
-/* index styles */
-
-.blogs a {
-    display: block;
-    margin: 40px 0;
-    padding-left: 30px;
-    border-left: 6px solid crimson;
-}
-
-.blogs a:hover h3 {
-    color: crimson;
-}
-
-
-/* details styles */
-
-.details {
-    position: relative;
-}
-
-button {
-    background: #ff4d6d;
-    /* Pink button color */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 30px;
-    /* Rounded button */
-}
-
-button:hover {
-    background: #ff85a2;
-    /* Light pink on hover */
-    color: #fff;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.delete {
-    position: relative;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    padding: 8px;
-}
-
-.delete:hover {
-    cursor: pointer;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-.edit {
-    position: relative;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    padding: 8px;
-}
-
-.edit:hover {
-    cursor: pointer;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-
-/* create styles */
 
 .create-blog form {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -189,13 +79,8 @@ button:hover {
     display: block;
     width: 100%;
     margin: 10px 0;
-    padding: 8px;
+    padding: 10px;
     border-radius: 20px;
-}
-
-.create-blog label {
-    display: block;
-    margin-top: 24px;
 }
 
 textarea {
@@ -204,12 +89,12 @@ textarea {
 
 .create-blog button {
     margin-top: 20px;
-    background: crimson;
+    background: rgba(218, 218, 218, 0.8);
     color: white;
-    padding: 6px;
+    padding: 30px;
     border: 0;
-    font-size: 1.2em;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 20px;
-    font-family: 'Dancing Script', cursive;
+    margin-left: 250px;
 }

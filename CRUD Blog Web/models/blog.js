@@ -16,17 +16,17 @@ const blogSchema = new Schema({
     },
     stock: {
         type: Number,
-        required: true
+        required: true,
+        min: 0,
     },
-    image: {
-        data: Buffer,
-        contentType: String
-        // type: String,
-        // required: true
-    },
+
+    img: {
+        type: String,
+        required: true,
+    }
 
 
 }, { timestamps: true });
 
-const Blog = mongoose.model('Blog', blogSchema);
+const Blog = mongoose.model('Shoes', blogSchema);
 module.exports = Blog;
